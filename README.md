@@ -8,3 +8,4 @@ Dependencies
 
 - Ansible
 - Pip-tools
+- Mkdocs
