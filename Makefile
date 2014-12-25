@@ -12,6 +12,9 @@ bootstrap:
 	@echo -e "${OK_COLOR}>>> Install Ansible...${NO_COLOR}"
 	bash -c "source bin/activate && pip install ansible"
 
+	@echo -e "${OK_COLOR}>>> Install MkDocs...${NO_COLOR}"
+	bash -c "source bin/activate && pip install mkdocs"
+
 	@echo -e "${OK_COLOR}>>> Installing vagrant-hostupdater ...${NO_COLOR}"
 	vagrant plugin install vagrant-hostsupdater
 
