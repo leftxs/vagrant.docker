@@ -3,9 +3,9 @@ VENV=.
 NO_COLOR    = \x1b[0m
 OK_COLOR    = \x1b[32;01m
 
-.PHONY: bootstrap build all
+.PHONY: install build all
 
-bootstrap:
+install:
 	@echo -e "${OK_COLOR}>>> Creating virtuelenv...${NO_COLOR}"
 	virtualenv --python=python2.7 --no-site-packages $(VENV)
 
@@ -14,6 +14,9 @@ bootstrap:
 
 	@echo -e "${OK_COLOR}>>> Install MkDocs...${NO_COLOR}"
 	bash -c "source bin/activate && pip install mkdocs"
+
+	@echo -e "${OK_COLOR}>>> Install Pip-tools...${NO_COLOR}"
+	bash -c "source bin/activate && pip install pip-tools"
 
 	@echo -e "${OK_COLOR}>>> Installing vagrant-hostupdater ...${NO_COLOR}"
 	vagrant plugin install vagrant-hostsupdater

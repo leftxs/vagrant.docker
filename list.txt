@@ -1,7 +1,7 @@
 pip
 ---
 - ansible
-- pip update app
+- pip tools
 - mkdocs
 
 debian
