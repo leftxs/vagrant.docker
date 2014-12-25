@@ -1,0 +1,12 @@
+pip
+---
+- ansible
+- pip update app
+- mkdocs
+
+debian
+-------
+- htop
+- docker.io via extra repo
+
+
