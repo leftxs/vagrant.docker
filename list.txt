@@ -8,5 +8,6 @@ debian
 -------
 - htop
 - docker.io via extra repo
-
+- custom vim
+- custom gitconf
 
