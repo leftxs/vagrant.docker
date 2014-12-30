@@ -1,0 +1,9 @@
+docs_dir: source
+site_name: vgrant.docker
+site_url: leftxs.github.io/vagrant.docker
+repo_url: https://github.com/leftxs/vagrant.docker
+site_description: vagrant box, hosting docker for development
+pages:
+- ['index.md', 'Introduction']
+- ['user-guide/configuration.md', 'User Guide', 'Configuring Mashmallow']
+- ['about/license.md', 'About', 'License']
