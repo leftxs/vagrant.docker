@@ -11,3 +11,5 @@ debian
 - custom vim
 - custom gitconf
 
+- add gitignore
+
