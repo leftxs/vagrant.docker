@@ -1,0 +1,14 @@
+---
+# Install and configure vim
+
+- name: Install vim
+  apt: name={{item}} state=present
+  with_items:
+    - vim
+
+- name: Setting up vim dir
+  synchronize: src=../files/vim dest=/home/vagrant/.vim owner=vagrant
+
+- name: Upload vimrc
+  copy: src=../files/vimrc dest=/home/vagrant/.vimrc owner=vagrant
+
