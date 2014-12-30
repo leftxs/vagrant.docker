@@ -21,6 +21,9 @@ install:
 	@echo -e "${OK_COLOR}>>> Installing vagrant-hostupdater ...${NO_COLOR}"
 	vagrant plugin install vagrant-hostsupdater
 
+	@echo -e "${OK_COLOR}>>> Installing vagrant-vbguest ...${NO_COLOR}"
+	vagrant plugin install vagrant-vbguest
+
 build:
 	@echo -e "${OK_COLOR}>>> Hold on we are building now!...${NO_COLOR}"
 	bash -c "source bin/activate && vagrant up"
