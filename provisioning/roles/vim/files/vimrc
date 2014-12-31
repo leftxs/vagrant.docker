@@ -1,5 +1,5 @@
 syntax enable
-colorscheme monokai
+colorscheme molokai
 set t_Co=256
 set number
 
@@ -19,7 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
-Plugin 'lsdr/monokai'
+
 Plugin 'tpope/vim-fugitive'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'godlygeek/tabular'
