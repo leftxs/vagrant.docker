@@ -8,5 +8,5 @@
   roles:
    - upgrade
    - motd
-   - vim
+     #- vim
 
