@@ -36,9 +36,7 @@ boot:
 	@echo -e "${OK_COLOR}>>> Hold on we are booting now!...${NO_COLOR}"
 	bash -c "source bin/activate && vagrant up"
 
-all:
-	@echo -e"${OK_COLOR}>>> Installing and building, this will take some time${NO_COLOR}"
-	install boot
+all: install boot
 
 pip-update:
 	@echo -e"${OK_COLOR}>>> Upgrading all packes installed with pip${NO_COLOR}"
