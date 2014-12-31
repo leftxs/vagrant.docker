@@ -38,7 +38,7 @@ boot:
 
 all:
 	@echo -e"${OK_COLOR}>>> Installing and building, this will take some time${NO_COLOR}"
-	install build
+	install boot
 
 pip-update:
 	@echo -e"${OK_COLOR}>>> Upgrading all packes installed with pip${NO_COLOR}"
