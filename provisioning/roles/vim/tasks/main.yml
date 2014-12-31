@@ -7,8 +7,8 @@
     - vim
 
 - name: Setting up vim dir
-  synchronize: src=../files/vim dest=/home/vagrant/.vim owner=vagrant
+  synchronize: src=../files/vim dest=/home/vagrant/.vim
 
 - name: Upload vimrc
-  copy: src=../files/vimrc dest=/home/vagrant/.vimrc owner=vagrant
+  copy: src=../files/vimrc dest=/home/vagrant/.vimrc owner=vagrant group=vagrant
 
