@@ -1,13 +1,26 @@
 ---
 # Install and configure vim
 
+
 - name: Install vim
   apt: name={{item}} state=present
   with_items:
     - vim
 
-- name: Setting up vim dir
-  synchronize: src=../files/vim dest=/home/vagrant/.vim
+- name: Uploading vim dir
+  synchronize: src=../files/vim dest=/home/vagrant/
+
+- name: Moving vim dir into place
+  command: mv /home/vagrant/vim /home/vagrant/.vim
+
+- name: Cloning Vundle
+  sudo: no
+  git: repo=https://github.com/gmarik/Vundle.vim.git
+       dest=/home/vagrant/.vim/bundle/Vundle.vim
+
+- name: Run vundle install
+  sudo: no
+  command: vim +PluginInstall +qall
 
 - name: Upload vimrc
   copy: src=../files/vimrc dest=/home/vagrant/.vimrc owner=vagrant group=vagrant
