@@ -4,7 +4,7 @@
 
 Vagrant.configure("2") do |config|
     config.vm.box = "debian_docker_base"
-    config.vm.box_url = "https://cloud-images.ubuntu.com/vagrant/trusty/current/trusty-server-cloudimg-i386-vagrant-disk1.box"
+    config.vm.box_url = "https://download.leftxs.org/vagrant/debian_docker_base.box"
 
     config.vm.network "private_network", ip: "192.168.50.5"
     config.vm.hostname = "docker-dev"
