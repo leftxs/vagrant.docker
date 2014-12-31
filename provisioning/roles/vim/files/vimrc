@@ -19,6 +19,7 @@ Plugin 'gmarik/Vundle.vim'
 " The following are examples of different formats supported.
 " Keep Plugin commands between vundle#begin/end.
 " plugin on GitHub repo
+Plugin 'lsdr/monokai'
 Plugin 'tpope/vim-fugitive'
 Plugin 'ekalinin/Dockerfile.vim'
 Plugin 'godlygeek/tabular'
@@ -66,7 +67,7 @@ set laststatus=2
 if has('statusline')
 set statusline=%<%f\
 set statusline+=%w%h%m%r
-set statusline+=%{fugitive#statusline()}
+"set statusline+=%{fugitive#statusline()}
 set statusline+=\ [%{&ff}/%Y
 set statusline+=\ [%{getcwd()}]
 set statusline+=%=%-14.(Line:\ %l\ of\ %L\ [%p%%]\ -\ Col:\ %c%V%)
