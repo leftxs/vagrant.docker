@@ -29,11 +29,11 @@ Dependencies
 Installation
 ------------
 
-Clone this repo
+Clone this repository:
 
     git clone https://github.com/leftxs/vagrant.docker
 
-Run Makefile
+Run Makefile:
 
     make install
 
