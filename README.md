@@ -11,6 +11,7 @@ Features
 - Easy to get started
 - [Ansible](http://www.ansible.com/home "Ansible's Homepage")
 - [Pip-Tools](https://github.com/nvie/pip-tools "Pip-Tools's Homepage")
+- [MkDocs](http://www.mkdocs.org/ "MkDocs's Homepage")
 
 Documentation
 -------------
