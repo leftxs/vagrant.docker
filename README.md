@@ -13,7 +13,7 @@ Features
 Documentation
 -------------
 
-Full documentation for end users can be found in the "docs" folder, and is also available online at [https://leftxs.github.io/vagrant.docker/](https://leftxs.github.io/vagrant.docker/ "Online Docs").
+Full documentation for end users can be found in the "[docs](https://github.com/leftxs/vagrant.docker/tree/master/docs/source "Docs folder")" folder, and is also available online at [https://leftxs.github.io/vagrant.docker/](https://leftxs.github.io/vagrant.docker/ "Online Docs").
 
 
 Dependencies
