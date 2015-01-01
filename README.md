@@ -2,7 +2,8 @@ vagrant.docker
 ==============
 
 A vagrant box based on [Ubuntu](http://www.ubuntu.com/ "Ubuntu's Homepage") for developing/working with [Docker](https://www.docker.com/ "Docker's Homepage").
-This may change to a more lightweigt OS.
+
+This may change to a more lightweight OS.
 
 Features
 --------
@@ -36,8 +37,8 @@ Run Makefile
 Contribute
 ----------
 
-- Issue Tracker: github.com/leftxs/vagrant.docker/issues
-- Source Code: github.com/leftxs/vagrant.docker/
+- Issue Tracker: [github.com/leftxs/vagrant.docker/issues](https://github.com/leftxs/vagrant.docker/issues "Issue Tracker")
+- Source Code: [github.com/leftxs/vagrant.docker/](https://github.com/leftxs/vagrant.docker "Code on GitHub")
 - Documentation: [https://leftxs.github.io/vagrant.docker/](https://leftxs.github.io/vagrant.docker/ "Online Docs")
 
 Support
