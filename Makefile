@@ -1,18 +1,18 @@
 SHELL := /bin/bash
 VENV=.
 NO_COLOR    = \x1b[0m
-OK_COLOR    = \x1b[32;01m
+OK_COLOR    = \x1b[33;01m
 
 .PHONY: help install boot all provision pip-update pip-list
 
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
-	@echo " install		to create virtualenv, install ansible, pip-tools, mkdocs and vagrant-plugins"
-	@echo " boot			to start up vagrant in acticated virtualenv and run vagrant up for the first time"
-	@echo " all			to run install and build in one step"
-	@echo " provision		run ansible against box to deploy changes"
-	@echo " pip-update		to update all packages installed with pip"
-	@echo " pi-list		to create a requirements.txt with all packages installed with pip"
+	@echo -e "${OK_COLOR}install${NO_COLOR}			to create virtualenv, install ansible, pip-tools, mkdocs and vagrant-plugins"
+	@echo -e "${OK_COLOR}boot${NO_COLOR}			to start up vagrant in acticated virtualenv and run vagrant up for the first time"
+	@echo -e "${OK_COLOR}all${NO_COLOR}			to run install and build in one step"
+	@echo -e "${OK_COLOR}provision${NO_COLOR}		run ansible against box to deploy changes"
+	@echo -e "${OK_COLOR}pip-update${NO_COLOR}		to update all packages installed with pip"
+	@echo -e "${OK_COLOR}pip-list${NO_COLOR}		to create a requirements.txt with all packages installed with pip"
 
 install:
 	@echo -e "${OK_COLOR}>>> Creating virtuelenv...${NO_COLOR}"
