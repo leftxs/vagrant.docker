@@ -6,7 +6,7 @@ Development with docker the easy way
 
 ## Overview
 
-A debian based vagrant box for hosting docker with some custom settings
+A ubuntu based vagrant box for docker hosting/development with some custom settings
 
 
 ## Dependencies

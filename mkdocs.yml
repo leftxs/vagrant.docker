@@ -1,4 +1,5 @@
-docs_dir: source
+docs_dir: docs/source
+site_dir: docs/site
 site_name: vgrant.docker
 site_url: leftxs.github.io/vagrant.docker
 repo_url: https://github.com/leftxs/vagrant.docker
