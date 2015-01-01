@@ -8,10 +8,10 @@ OK_COLOR    = \x1b[32;01m
 help:
 	@echo "Please use \`make <target>' where <target> is one of"
 	@echo " install		to create virtualenv, install ansible, pip-tools, mkdocs and vagrant-plugins"
-	@echo " boot		to start up vagrant in acticated virtualenv and run vagrant up for the first time"
-	@echo " all		to run install and build in one step"
-	@echo " provision	run ansible against box to deploy changes"
-	@echo " pip-update	to update all packages installed with pip"
+	@echo " boot			to start up vagrant in acticated virtualenv and run vagrant up for the first time"
+	@echo " all			to run install and build in one step"
+	@echo " provision		run ansible against box to deploy changes"
+	@echo " pip-update		to update all packages installed with pip"
 	@echo " pi-list		to create a requirements.txt with all packages installed with pip"
 
 install:
