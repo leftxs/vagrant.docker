@@ -8,3 +8,4 @@ pages:
 - ['index.md', 'Introduction']
 - ['user-guide/configuration.md', 'User Guide', 'Configuring Mashmallow']
 - ['about/license.md', 'About', 'License']
+- ['about/motivation.md', 'About', 'Motivation']
