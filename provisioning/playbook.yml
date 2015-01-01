@@ -8,5 +8,10 @@
   roles:
    - upgrade
    - motd
-     #- vim
+   - bash
+   - docker
+   - vim
 
+  handlers:
+    - name: restart docker
+      service: name=docker state=started

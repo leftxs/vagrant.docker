@@ -1,20 +1,27 @@
 ---
 # Install and configure docker
 
+- name: Add docker key
+  apt_key: keyserver=keyserver.ubuntu.com id=36A1D7869245C8950F966E92D8576A8BA88D21E9
+
+- name: Add docker to sources.list
+  apt_repository: repo='deb https://get.docker.com/ubuntu docker main' state=present
+
+- name: Update package cache
+  apt: update_cache=yes
+
 - name: Install needed packages
   apt: name={{item}} state=present
   with_items:
     - curl
-    - unzip
     - htop
-
-- name: Install docker
-  command: curl -sSL https://get.docker.com/ | sh
+    - unzip
+    - lxc-docker
 
 - name: Add vagrant user to docker group
   command: gpasswd -a vagrant docker
 
 - name: Add google to docker dns settings
-  command: echo 'DOCKER_OPTS="--dns 8.8.8.8"' >> /etc/default/docker
-
+  lineinfile: dest=/etc/default/docker line='DOCKER_OPTS="--dns 8.8.8.8 --dns 8.8.4.4"'
+  notify: restart docker
 
