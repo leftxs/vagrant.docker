@@ -1,7 +1,7 @@
 vagrant.docker
 ==============
 
-A vagrant box based on [Ubuntu](http://www.ubuntu.com/ "Ubuntu's Homepage") for developing/working with [Docker](https://www.docker.com/ "Docker's Homepage").
+A [vagrant](https://www.vagrantup.com/ "Vagrant's Homepage") box based on [Ubuntu](http://www.ubuntu.com/ "Ubuntu's Homepage") for developing/working with [Docker](https://www.docker.com/ "Docker's Homepage").
 
 This may change to a more lightweight OS.
 
@@ -22,8 +22,8 @@ Full documentation for end users can be found in the "[docs](https://github.com/
 Dependencies
 ------------
  
- - Virtualenv
- - VirtualBox [tested with version 4.3.20]
+ - [Virtualenv](https://virtualenv.pypa.io/en/latest/ "Virtualenv's Homepage")
+ - [VirtualBox](https://www.virtualbox.org/ "VirtualBox's Homepage") [tested with version 4.3.20]
 
  
 Installation
