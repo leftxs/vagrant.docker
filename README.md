@@ -9,6 +9,8 @@ Features
 --------
 
 - Easy to get started
+- [Ansible](http://www.ansible.com/home "Ansible's Homepage")
+- [Pip-Tools](https://github.com/nvie/pip-tools "Pip-Tools's Homepage")
 
 Documentation
 -------------
@@ -20,7 +22,7 @@ Dependencies
 ------------
  
  - Virtualenv
- - Virtualbox [tested with version 4.3.20]
+ - VirtualBox [tested with version 4.3.20]
 
  
 Installation
