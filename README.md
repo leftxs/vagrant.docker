@@ -1,7 +1,7 @@
 vagrant.docker
 ==============
 
-vagrant box to host docker, based on debian and/or ubuntu
+vagrant box to host docker, based on ubuntu
 
 Dependencies
 ------------
