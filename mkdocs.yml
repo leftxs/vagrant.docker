@@ -7,5 +7,6 @@ site_description: vagrant box, hosting docker for development
 pages:
 - ['index.md', 'Introduction']
 - ['user-guide/configuration.md', 'User Guide', 'Configuring Mashmallow']
+- ['user-guide/vim.md', 'User Guide', 'Vim']
 - ['about/license.md', 'About', 'License']
 - ['about/motivation.md', 'About', 'Motivation']
