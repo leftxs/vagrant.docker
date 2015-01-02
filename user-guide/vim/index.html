@@ -4,17 +4,17 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="vagrant box, hosting docker for development">
         
-        <link rel="canonical" href="leftxs.github.io/vagrant.docker/">
-        <link rel="shortcut icon" href="./img/favicon.ico">
+        
+        <link rel="canonical" href="leftxs.github.io/vagrant.docker/user-guide/vim/">
+        <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <title>vgrant.docker</title>
+        <title>Vim - vgrant.docker</title>
 
-        <link href="./css/bootstrap-custom.min.css" rel="stylesheet">
-        <link href="./css/font-awesome-4.0.3.css" rel="stylesheet">
-        <link href="./css/base.css" rel="stylesheet">
-        <link rel="stylesheet" href="./css/highlight.css">
+        <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
+        <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
+        <link href="../../css/base.css" rel="stylesheet">
+        <link rel="stylesheet" href="../../css/highlight.css">
 
         <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
         <!--[if lt IE 9]>
@@ -25,7 +25,7 @@
         
     </head>
 
-    <body class="homepage">
+    <body>
 
         <div class="navbar navbar-default navbar-fixed-top" role="navigation">
     <div class="container">
@@ -43,7 +43,7 @@
             
 
             <!-- Main title -->
-            <a class="navbar-brand" href=".">vgrant.docker</a>
+            <a class="navbar-brand" href="../..">vgrant.docker</a>
         </div>
 
         <!-- Expanded navigation -->
@@ -53,16 +53,16 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             <li >
-                                <a href="user-guide/configuration/">Configuring Mashmallow</a>
+                                <a href="../configuration">Configuring Mashmallow</a>
                             </li>
                         
-                            <li >
-                                <a href="user-guide/vim/">Vim</a>
+                            <li class="active">
+                                <a href=".">Vim</a>
                             </li>
                         
                         </ul>
@@ -75,15 +75,15 @@
                         <ul class="dropdown-menu">
                         
                             <li >
-                                <a href="about/license/">License</a>
+                                <a href="../../about/license">License</a>
                             </li>
                         
                             <li >
-                                <a href="about/motivation/">Motivation</a>
+                                <a href="../../about/motivation">Motivation</a>
                             </li>
                         
                             <li >
-                                <a href="about/documentation/">This documentation</a>
+                                <a href="../../about/documentation">This documentation</a>
                             </li>
                         
                         </ul>
@@ -98,13 +98,13 @@
             <ul class="nav navbar-nav navbar-right">
                 
                 
-                <li class="disabled">
-                    <a rel="next" >
+                <li >
+                    <a rel="next" href="../configuration">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="user-guide/configuration/">
+                    <a rel="prev" href="../../about/license">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -130,39 +130,17 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#vagrantdocker">vagrant.docker</a></li>
+        <li class="main active"><a href="#vim">Vim</a></li>
         
-            <li><a href="#overview">Overview</a></li>
-        
-            <li><a href="#dependencies">Dependencies</a></li>
-        
-            <li><a href="#install">Install</a></li>
+            <li><a href="#vim-plugins">Vim Plugins</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="vagrantdocker">vagrant.docker</h1>
-<p>Development with docker the easy way</p>
-<h2 id="overview">Overview</h2>
-<p>A <a href="https://www.vagrantup.com/" title="Vagrant's Homepage">vagrant</a> box based on <a href="http://www.ubuntu.com/" title="Ubuntu's Homepage">Ubuntu</a> for developing/working with <a href="https://www.docker.com/" title="Docker's Homepage">Docker</a>.</p>
-<h2 id="dependencies">Dependencies</h2>
-<ul>
-<li><a href="http://www.ansible.com/home" title="Ansible's Homepage">Ansible</a></li>
-<li><a href="https://virtualenv.pypa.io/en/latest/" title="Virtualenv's Homepage">Virtualenv</a></li>
-<li><a href="https://www.virtualbox.org/" title="VirtualBox's Homepage">VirtualBox</a> [tested with version 4.3.20]</li>
-<li><a href="https://github.com/nvie/pip-tools" title="Pip-Tools's Homepage">Pip-Tools</a></li>
-<li><a href="https://github.com/cogitatio/vagrant-hostsupdater" title="Hostsupdates's Homepage">Vagrant-Hostsupdater</a></li>
-<li><a href="https://github.com/dotless-de/vagrant-vbguest" title="Vbguests's Homepage">Vagrant-Vbguest</a></li>
-</ul>
-<h2 id="install">Install</h2>
-<p>Clone this repo</p>
-<pre><code>git clone https://github.com/leftxs/vagrant.docker
-</code></pre>
-<p>Run Makefile</p>
-<pre><code>make install
-</code></pre>
+<h1 id="vim">Vim</h1>
+<h2 id="vim-plugins">Vim Plugins</h2>
 </div>
             
         </div>
@@ -176,9 +154,9 @@
         
 
         <script src="https://code.jquery.com/jquery-1.10.2.min.js"></script>
-        <script src="./js/bootstrap-3.0.3.min.js"></script>
-        <script src="./js/prettify-1.0.min.js"></script>
-        <script src="./js/highlight.pack.js"></script>
-        <script src="./js/base.js"></script>
+        <script src="../../js/bootstrap-3.0.3.min.js"></script>
+        <script src="../../js/prettify-1.0.min.js"></script>
+        <script src="../../js/highlight.pack.js"></script>
+        <script src="../../js/base.js"></script>
     </body>
 </html>
