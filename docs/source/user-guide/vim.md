@@ -7,8 +7,8 @@ The default editor is [Vim](http://www.vim.org/ "Vim's Hompeage"). Vim is config
 [Vundle](https://github.com/gmarik/Vundle.vim "Vundle's Homepage") is used for managing the plugins.
 
 Following plugins are installed:
-- [fugitive.vim](https://github.com/tpope/vim-fugitive "fugitive plugin"): Git wrapper
 
+- [fugitive.vim](https://github.com/tpope/vim-fugitive "fugitive plugin"): Git wrapper
 - [Dockerfile.vim](https://github.com/ekalinin/Dockerfile.vim "dockerfile plugin"): Vim syntax file for [Docker](http://docker.io/)'s [Dockerfile](http://docs.docker.io/en/latest/use/builder/)
 - [Tabular.vim](https://github.com/godlygeek/tabular): Vim script for text filtering and alignment
 - [vim-markdown](https://github.com/plasticboy/vim-markdown): Syntax highlighting, matching rules and mappings for [the original Markdown](http://daringfireball.net/projects/markdown/)
