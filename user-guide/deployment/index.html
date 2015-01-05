@@ -6,10 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="leftxs.github.io/vagrant.docker/about/motivation/">
+        <link rel="canonical" href="leftxs.github.io/vagrant.docker/user-guide/deployment/">
         <link rel="shortcut icon" href="../../img/favicon.ico">
 
-        <title>Motivation - vgrant.docker</title>
+        <title>Deployment - vgrant.docker</title>
 
         <link href="../../css/bootstrap-custom.min.css" rel="stylesheet">
         <link href="../../css/font-awesome-4.0.3.css" rel="stylesheet">
@@ -53,16 +53,16 @@
                 <ul class="nav navbar-nav">
                 
                 
-                    <li class="dropdown">
+                    <li class="dropdown active">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">User Guide <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
-                            <li >
-                                <a href="../../user-guide/deployment">Deployment</a>
+                            <li class="active">
+                                <a href=".">Deployment</a>
                             </li>
                         
                             <li >
-                                <a href="../../user-guide/vim">Vim</a>
+                                <a href="../vim">Vim</a>
                             </li>
                         
                         </ul>
@@ -70,20 +70,20 @@
                 
                 
                 
-                    <li class="dropdown active">
+                    <li class="dropdown">
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">About <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                         
                             <li >
-                                <a href="../license">License</a>
-                            </li>
-                        
-                            <li class="active">
-                                <a href=".">Motivation</a>
+                                <a href="../../about/license">License</a>
                             </li>
                         
                             <li >
-                                <a href="../documentation">This documentation</a>
+                                <a href="../../about/motivation">Motivation</a>
+                            </li>
+                        
+                            <li >
+                                <a href="../../about/documentation">This documentation</a>
                             </li>
                         
                         </ul>
@@ -99,12 +99,12 @@
                 
                 
                 <li >
-                    <a rel="next" href="../license">
+                    <a rel="next" href="../..">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </li>
                 <li >
-                    <a rel="prev" href="../documentation">
+                    <a rel="prev" href="../vim">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </li>
@@ -130,23 +130,59 @@
                 <div class="col-md-3"><div class="bs-sidebar hidden-print affix well" role="complementary">
     <ul class="nav bs-sidenav">
     
-        <li class="main active"><a href="#motivation">Motivation</a></li>
+        <li class="main active"><a href="#deployment">Deployment</a></li>
+        
+            <li><a href="#install">Install</a></li>
+        
+            <li><a href="#boot">Boot</a></li>
+        
+            <li><a href="#provision">Provision</a></li>
+        
+            <li><a href="#all">All</a></li>
+        
+            <li><a href="#pip-update">Pip-Update</a></li>
+        
+            <li><a href="#pip-list">Pip-List</a></li>
         
     
     </ul>
 </div></div>
                 <div class="col-md-9" role="main">
 
-<h1 id="motivation">Motivation</h1>
-<p>Why not just use <a href="http://boot2docker.io/" title="Page of boot2docker">boot2docker</a> or <a href="https://coreos.com/" title="CoreOS's Homepage">CoreOS</a> ?</p>
-<p>There is <strong>nothing</strong> wrong with them, booth are awesome !</p>
-<p>So why we started <em>vagrant.docker</em> then ?</p>
-<p>The difference is that <em>vagrant.docker</em> is more focusing on a <strong>whole
-development environment</strong> and running <strong>everything</strong> in the virtual machine.</p>
-<p>Besides docker <em>vagrant.docker</em> comes also with development tools like vim and git already installed.</p>
-<p>We try to give them some useful default settings like a awesome vim configuration focused on docker and documentation, a useful bash configuration and more.</p>
-<p><em>vagrant.docker</em> is pretty much wip [work in progress] and under development, there will be a lot of changes in the future, like moving to a own custom image [small, fast and easy to add more features], get rid of Ansible and much more.</p>
-<p>More to be come ........</p>
+<h1 id="deployment">Deployment</h1>
+<p>For easy usage there is a Makefile which will take care about the most. You can run it like</p>
+<pre><code>make *$option*
+</code></pre>
+<p>To get a list off all options just run <em>make</em> </p>
+<pre><code>make
+</code></pre>
+<h2 id="install">Install</h2>
+<p>For installation just run <em>make install</em> this will take care about the base install.</p>
+<pre><code>make install
+</code></pre>
+<h2 id="boot">Boot</h2>
+<p>This will start up a already installed setup, this command is equal to <em>vagrant up</em></p>
+<pre><code>make boot
+</code></pre>
+<h2 id="provision">Provision</h2>
+<p>This will run Ansible against the installed setup, this command is equal to <em>vagrant provision</em>
+but will be executed in a activated virtualenv.</p>
+<pre><code>make provision
+</code></pre>
+<h2 id="all">All</h2>
+<p>This will install, start and provision your setup, this command is useful for running the first time</p>
+<pre><code>make all
+</code></pre>
+<h2 id="pip-update">Pip-Update</h2>
+<p>You do want to upgrade the version of Ansible and for example Mkdocs, for this you can run</p>
+<pre><code>make pip-update
+</code></pre>
+<p>and it will update all python apps, in the project environment. </p>
+<h2 id="pip-list">Pip-List</h2>
+<p>If you want to create a file [requirements.txt] will all installed python apps, like Ansible and
+MkDocs, please run:</p>
+<pre><code>make pip-list
+</code></pre>
 </div>
             
         </div>
