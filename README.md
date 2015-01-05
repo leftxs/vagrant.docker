@@ -21,11 +21,11 @@ Full documentation for end users can be found in the "[docs](https://github.com/
 
 Dependencies
 ------------
- 
+
  - [Virtualenv](https://virtualenv.pypa.io/en/latest/ "Virtualenv's Homepage")
  - [VirtualBox](https://www.virtualbox.org/ "VirtualBox's Homepage") [tested with version 4.3.20]
 
- 
+
 Installation
 ------------
 
@@ -35,7 +35,7 @@ Clone this repository:
 
 Run Makefile:
 
-    make install
+    make all
 
 Contribute
 ----------
