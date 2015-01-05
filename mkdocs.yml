@@ -6,7 +6,7 @@ repo_url: https://github.com/leftxs/vagrant.docker
 site_description: vagrant box, hosting docker for development
 pages:
 - ['index.md', 'Introduction']
-- ['user-guide/configuration.md', 'User Guide', 'Configuring Mashmallow']
+- ['user-guide/deployment.md', 'User Guide', 'Deployment']
 - ['user-guide/vim.md', 'User Guide', 'Vim']
 - ['about/license.md', 'About', 'License']
 - ['about/motivation.md', 'About', 'Motivation']
