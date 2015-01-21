@@ -14,10 +14,9 @@ help:
 	@echo -e "${OK_COLOR}pip-update${NO_COLOR}		to update all packages installed with pip"
 	@echo -e "${OK_COLOR}pip-list${NO_COLOR}		to create a requirements.txt with all packages installed with pip"
 
-install:
+bootstrap:
 	@echo -e "${OK_COLOR}>>> Creating virtuelenv...${NO_COLOR}"
 	virtualenv --python=python2.7 --no-site-packages $(VENV)
-
 	@echo -e "${OK_COLOR}>>> Install Dependencies...${NO_COLOR}"
 	bash -c "source bin/activate && pip install -r requirements.txt"
 
@@ -42,3 +41,5 @@ pip-update:
 pip-list:
 	@echo -e"${OK_COLOR}>>> Creating requirements.txt with all your packages installed by pip${NO_COLOR}"
 	pip-dump
+
+install: bootstrap check boot
