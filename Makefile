@@ -18,20 +18,12 @@ install:
 	@echo -e "${OK_COLOR}>>> Creating virtuelenv...${NO_COLOR}"
 	virtualenv --python=python2.7 --no-site-packages $(VENV)
 
-	@echo -e "${OK_COLOR}>>> Install Ansible...${NO_COLOR}"
-	bash -c "source bin/activate && pip install ansible"
+	@echo -e "${OK_COLOR}>>> Install Dependencies...${NO_COLOR}"
+	bash -c "source bin/activate && pip install -r requirements.txt"
 
-	@echo -e "${OK_COLOR}>>> Install MkDocs...${NO_COLOR}"
-	bash -c "source bin/activate && pip install mkdocs"
-
-	@echo -e "${OK_COLOR}>>> Install Pip-tools...${NO_COLOR}"
-	bash -c "source bin/activate && pip install pip-tools"
-
-	@echo -e "${OK_COLOR}>>> Installing vagrant-hostupdater ...${NO_COLOR}"
-	vagrant plugin install vagrant-hostsupdater
-
-	@echo -e "${OK_COLOR}>>> Installing vagrant-vbguest ...${NO_COLOR}"
-	vagrant plugin install vagrant-vbguest
+check:
+	@echo -e "${OK_COLOR}>>> Checking dependencies ...${NO_COLOR}"
+	./check.sh
 
 boot:
 	@echo -e "${OK_COLOR}>>> Hold on we are booting now!...${NO_COLOR}"
