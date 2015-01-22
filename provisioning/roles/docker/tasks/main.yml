@@ -10,6 +10,9 @@
 - name: Update package cache
   apt: update_cache=yes
 
+- name: Install AUFS-kernel support
+  command: apt-get install linux-image-extra-$(uname -r) aufs-tools
+
 - name: Install needed packages
   apt: name={{item}} state=present
   with_items:
