@@ -14,6 +14,7 @@ Following plugins are installed:
 - [vim-markdown](https://github.com/plasticboy/vim-markdown): Syntax highlighting, matching rules and mappings for [the original Markdown](http://daringfireball.net/projects/markdown/)
 - [vim-json](https://github.com/elzr/vim-json): A better JSON for Vim
 - [vim-airline](https://github.com/bling/vim-airline): lean & mean status/tabline for vim that's light as air
+- [vim-nginx](http://www.vim.org/scripts/script.php?script_id=1886): Syntax highlighting for Nginx
 
 ## Screenshots
 
