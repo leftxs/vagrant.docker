@@ -2,7 +2,7 @@ syntax enable
 colorscheme molokai
 set t_Co=256
 set number
-
+set spell spelllang=en_us
 
 set nocompatible              " be iMproved, required
 filetype off                  " required

@@ -2,6 +2,11 @@
 
 The default editor is [Vim](http://www.vim.org/ "Vim's Hompeage"). Vim is configured with a couple of plugins like syntax checking for Dockerfiles and git integration.
 
+# Spell Check
+Vim is configured with spell check, the default language is *us_en*.
+If you write something wrong the file will be automatically highlighted. To get a list of possible right words press *z=* when you are on the file, now you cab choose between possible solutions.
+Please follow [this link](http://www.vim.org/scripts/script.php?script_id=3844) for more information about spell check with Vim.  
+
 ## Vim Plugins
 
 [Vundle](https://github.com/gmarik/Vundle.vim "Vundle's Homepage") is used for managing the plugins.
