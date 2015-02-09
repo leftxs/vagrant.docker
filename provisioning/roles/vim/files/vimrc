@@ -22,6 +22,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'elzr/vim-json'
 Plugin 'bling/vim-airline'
 Plugin 'Townk/vim-autoclose'
+Plugin 'vim-scripts/nginx.vim'
 
 " All of your Plugins must be added before the following line
 call vundle#end()            " required
