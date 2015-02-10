@@ -3,6 +3,7 @@ colorscheme molokai
 set t_Co=256
 set number
 :map <F5> :setlocal spell! spelllang=en_us<CR>
+:imap <F5> <C-o>:setlocal spell! spelllang=en_us<CR>
 
 set nocompatible              " be iMproved, required
 filetype off                  " required
