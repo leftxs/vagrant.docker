@@ -26,7 +26,7 @@
   copy: src=../files/vimrc dest=/home/vagrant/.vimrc owner=vagrant group=vagrant
 
 - name: Upload filetype.vim
-  copy: src=../files/filetype.vim dest=/home/vagrant/.vim/filetype.vim owner=vagrant group=vagrant
+  copy: src=../files/vim/filetype.vim dest=/home/vagrant/.vim/filetype.vim owner=vagrant group=vagrant
 
 - name: Cloning Vundle
   sudo: no
