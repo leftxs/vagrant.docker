@@ -3,7 +3,9 @@
 echo
 echo " ********************************************************"
 echo " * "
-echo " * Welcome to docker-dev"
+echo " * Welcome to your docker development box"
 echo " * "
+echo " * DNS is set to docker.local"
+echo " * " 
 echo " ********************************************************"
 echo
