@@ -11,3 +11,4 @@ pages:
 - ['about/license.md', 'About', 'License']
 - ['about/motivation.md', 'About', 'Motivation']
 - ['about/documentation.md', 'About', 'This documentation']
+- ['about/changelog.md', 'About', 'Changelog']
