@@ -1,0 +1,14 @@
+[core]
+	editor = vim
+
+[color]
+	ui = auto
+
+[commit]
+        template = /home/vagrant/.gitmessage.txt
+
+[alias]
+        st = status
+        co = commit
+        hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+

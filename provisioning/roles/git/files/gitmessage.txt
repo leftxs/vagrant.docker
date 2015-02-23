@@ -1,0 +1,8 @@
+#feat:
+#fix:
+#docs:
+#style (formatting, missing semi colons, etc; no code change):
+#refactor:
+#test (adding missing tests, refactoring tests; no production code change):
+#wip(wip on feature branch)
+#[ci skip]

@@ -1,0 +1,8 @@
+---
+# Setup sane default git config
+
+- name: Upload git config
+  copy: src=../files/gitconfig dest=/home/vagrant/.gitconfig owner=vagrant group=vagrant
+
+- name: Upload git messages
+  copy: src=../files/vim/gitmessages.txt dest=/home/vagrant/.gitmessages.txt owner=vagrant group=vagrant
