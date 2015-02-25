@@ -1,0 +1,21 @@
+---
+# Install and configure serverspec for docker
+
+- name: Install packages we need
+  apt: name={{item}} state=present
+  with_items:
+    - ruby
+    - ruby-dev
+
+- name: Upload Gemfile
+  copy: src=../files/Gemfile dest=/home/vagrant/Gemfile owner=vagrant group=vagrant
+
+- name: Running bundle
+  sudo: no
+  command: bundle install --binstubs
+
+- name: Create spec dir
+  file: path=/home/vagrant/spec.d state=directory owner=vagrant group=vagrant
+
+- name: Upload example.spec.rb
+  copy: src=../files/example.spec.rb dest=/home/vagrant/spec.d/example.spec.rb

@@ -8,6 +8,7 @@ pages:
 - ['index.md', 'Introduction']
 - ['user-guide/deployment.md', 'User Guide', 'Deployment']
 - ['user-guide/vim.md', 'User Guide', 'Vim']
+- ['user-guide/serverspec.md', 'User Guide', 'Serverspec']
 - ['about/license.md', 'About', 'License']
 - ['about/motivation.md', 'About', 'Motivation']
 - ['about/documentation.md', 'About', 'This documentation']
